@@ -22,6 +22,10 @@ nav li {
 	color: #fff;
 	text-decoration: none;
 }
+
+body {
+	background-color: lightgray;
+}
 .white {
 	color: #fff;
 }
