@@ -1,3 +1,18 @@
+@font-face {
+	font-family: "Boots And Spurs";
+	src: url("../Fonts/BootsAndSpurs.ttf") format("truetype");
+}
+
+h1,
+h2 {
+	font-family: "Boots And Spurs", "Roboto";
+}
+
+body section p {
+	font-family: sans-serif;
+	font-size: 1rem;
+	color: black;
+}
 .Firstparagraph {
 	background-color: #000;
 	color: #fff;
