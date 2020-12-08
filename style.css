@@ -20,6 +20,7 @@ body p {
 .Firstparagraph {
 	background-color: #000;
 	color: #fff;
+	font-family: "Boots And Spurs";
 }
 nav li {
 	background-color: #000;
@@ -89,4 +90,16 @@ body section h1 {
 }
 .rounded-image {
 	border-radius: 50%;
+}
+main h1 {
+	text-align: left;
+	font-size: 20px;
+}
+.submit_color [type="submit"] {
+	background-color: red;
+	color: white;
+}
+form [type="text"] + [type="checkbox"] {
+	display: table-row;
+	padding: 10px;
 }
