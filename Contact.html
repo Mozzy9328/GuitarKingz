@@ -14,33 +14,36 @@
 	<header>
 		<nav>
 			<p><a href="index.html" class="Firstparagraph">Guitar Kings</a></p>
-			<li><a href="index.htm" class="white">Home</a></li>
+			<li><a href="index.html" class="white">Home</a></li>
 			<li><a href="Guitars.html" class="white">Guitars</a></li>
 			<li><a href="Contact.html" class="white">Contacts</a></li>
 		</nav>
 	</header>
 	<main>
 		<h1><b>Contact Us</b></h1>
-		<form class="form__input">
-			Full Name:<input type="text" name="Full Name" /> Email:<input
-				type="email"
-				name="Email"
-			/>
-			<label for="Guitars">Guitar:</label>
-			<select name="Guitars" id="Guitars">
-				<option value="Airdorck Guitar">Airdorck Guitar</option>
-				<option value="Life">Life</option>
-				<option value="Left">Left</option>
-			</select>
-			<checkbox>
-				<input type="checkbox" name="checked" id="checkbox" />
-				<label for="Checkbox">Sign up for email updates</label>
-			</checkbox>
-			<label for="Message">Message</label
-			><textarea id="message" name="message"></textarea>
-			<submit class="submit_color">
-				<input type="Submit" value="Send now" />
-			</submit>
+		<form action="Submit.php" method="POST">
+			<fieldset class="Information">
+				<legend>Your Information</legend>
+				<label for="Name">Full Name</label>
+				<input type="text" id="Name" />
+				<label for="Email">Email</label>
+				<input type="email" id="Email" />
+			</fieldset>
+			<fieldset>
+				<legend>Choose your Guitar</legend>
+				<label for="Guitars">Guitars</label>
+				<select name="Guitars" id="Guitars">
+					<option value="Adirondack Red">Adirondack Red</option>
+					<option value="Adirondack Blue">Adirondack Blue</option>
+					<option value="Adirondack Green">Adirondak Green</option>
+				</select>
+				<input type="checkbox" id="checkbox" /><label for="Checkbox"
+					>Sign up for email updates.</label
+				>
+				<label for="Message" class="Guitar_section">Message</label>
+				<textarea name="Message" id="Message"></textarea>
+			</fieldset>
+			<input type="submit" value="Send Now" class="Button_red" />
 		</form>
 	</main>
 </html>

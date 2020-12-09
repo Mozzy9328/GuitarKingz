@@ -94,12 +94,29 @@ body section h1 {
 main h1 {
 	text-align: left;
 	font-size: 20px;
+
+	/* Contact Page */
 }
-.submit_color [type="submit"] {
+.Button_red {
 	background-color: red;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.5rem;
 	color: white;
+	content: "";
+	display: block;
+	margin-left: 2%;
+	margin-top: 2%;
 }
-form [type="text"] + [type="checkbox"] {
-	display: table-row;
-	padding: 10px;
+.information {
+	position: relative;
+}
+.Guitar_section {
+	position: static;
+	content: "";
+	display: block;
+	margin-top: 3%;
+}
+fieldset {
+	background-repeat: no-repeat;
+	max-width: 800px;
 }
