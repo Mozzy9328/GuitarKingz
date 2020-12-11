@@ -10,6 +10,7 @@
 h1,
 h2 {
 	font-family: "Boots And Spurs", "Roboto";
+	max-width: 500px;
 }
 
 body p {
@@ -17,10 +18,15 @@ body p {
 	font-size: 1rem;
 	color: black;
 }
+
 .Firstparagraph {
 	background-color: #000;
 	color: #fff;
 	font-family: "Boots And Spurs";
+	font-size: 2rem;
+	display: inline-block;
+	max-width: 500px;
+	padding: 20px 0px 0px 500px;
 }
 nav li {
 	background-color: #000;
@@ -33,12 +39,17 @@ body {
 }
 .white {
 	color: #fff;
+	text-decoration: none;
 }
-.red:hover {
-	background-color: red;
+.red {
+	background-color: rgb(151, 7, 7);
 	color: #fff;
 	text-decoration: none;
-	text-decoration-line: underline;
+	text-decoration-line: none;
+	border-radius: 0% 20% 0% 20%;
+	padding: 10px 80px 10px 80px;
+	margin: 5px 0px 0px 0px;
+	display: inline-block;
 }
 .green {
 	background-color: green;
@@ -48,8 +59,14 @@ body {
 section.BackgroundGrey {
 	background-color: lightgray;
 }
-.green:hover {
+.green {
 	text-decoration-line: underline;
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-line: none;
+	border-radius: 0% 20% 0% 20%;
+	padding: 10px 80px 10px 80px;
+	margin: 5px 0px 0px 0px;
 }
 header,
 footer {
@@ -68,8 +85,8 @@ img {
 	height: 250px;
 }
 div img {
-	width: 700px;
-	height: 500px;
+	max-width: 1000px;
+	max-height: 700px;
 }
 
 body section {
@@ -94,9 +111,25 @@ body section h1 {
 main h1 {
 	text-align: left;
 	font-size: 20px;
-
-	/* Contact Page */
 }
+
+header li {
+	display: inline;
+	margin: 10px;
+	font-size: 1rem;
+	text-decoration: none;
+}
+header li:hover {
+	text-decoration-line: underline;
+}
+
+.current {
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
+
+/* Contact Page */
 .Button_red {
 	background-color: red;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -109,6 +142,7 @@ main h1 {
 }
 .information {
 	position: relative;
+	display: inline;
 }
 .Guitar_section {
 	position: static;
