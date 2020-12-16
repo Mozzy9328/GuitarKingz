@@ -12,23 +12,27 @@ h2 {
 	font-family: "Boots And Spurs", "Roboto";
 	max-width: 500px;
 }
-
+h1 {
+	color: black;
+}
 body p {
 	font-family: "Roboto", "times new roman";
 	font-size: 1rem;
 	color: black;
 }
 
-.Firstparagraph {
-	background-color: #000;
-	color: #fff;
-	font-family: "Boots And Spurs";
+
+header {
+	background-image: url("../Guitars/home-header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 700px;
+	max-width: 1000px;
+}
+header section div p{
+	font-family: "Boots And Spurs", "Roboto";
 	font-size: 1rem;
-	display: inline-block;
-	max-width: 500px;
-	position: relative;
-	left: 10px;
-	text-decoration: none;
+	color: #ffff;
 }
 nav li {
 	background-color: #000;
@@ -70,12 +74,9 @@ section.BackgroundGrey {
 	padding: 10px 80px 10px 80px;
 	margin: 5px 0px 0px 0px;
 }
-header,
 footer {
 	background-color: black;
 	color: white;
-}
-footer {
 	text-align: center;
 }
 h1,
@@ -89,18 +90,6 @@ img {
 div img {
 	max-width: 1000px;
 	max-height: 700px;
-}
-
-body section {
-	background-image: url("../Guitars/home-header.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 700px;
-	max-width: 1000px;
-}
-body section h1 {
-	text-align: left;
-	font-size: 20px;
 }
 .rounded-corners {
 	border-radius: 10%;
@@ -116,7 +105,7 @@ main h1 {
 }
 
 header li {
-	display: inline;
+	display: inline-block;
 	margin: 10px;
 	font-size: 1rem;
 	text-decoration: none;
@@ -129,15 +118,54 @@ header li:hover {
 	font-weight: bold;
 	color: white;
 	font-size: 20px;
-}
-.positioned {
-	position: absolute;
-	bottom: 60%;
-	left: 10%;
+
 }
 
-.positioned-container {
-	position: relative;
+/*Layout section */
+
+/* HEADER */
+
+/*Header Container*/
+.container-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: black;
+	padding: 2%;
+	width: 96vw;
+}
+}
+
+/* The menu layout */
+
+.header-layout {
+	flex: 1;		
+}
+/* The Guitar Kingz layout */
+.paragraph-box{
+	flex: 1;
+
+}
+/* Header and button */
+
+.second-container-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.second-child-header {
+	position: absolute;
+	bottom: 50%;
+}
+/* BODY LAYOUT */
+.container-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: solid;
+	border-color: red;
+}
+
 }
 /* Contact Page */
 .Button_red {
@@ -148,17 +176,12 @@ header li:hover {
 	content: "";
 	display: block;
 	margin-left: 2%;
-	margin-top: 2%;
+	margin-top: 5%;
 }
 .information {
 	position: relative;
 	display: inline;
 }
-.Guitar_section {
-	position: fixed;
-	content: "";
-	display: block;
-	margin-top: 3%;
 }
 fieldset {
 	background-repeat: no-repeat;
