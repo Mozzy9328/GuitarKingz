@@ -21,15 +21,16 @@ body p {
 	color: black;
 }
 
-
 header {
 	background-image: url("../Guitars/home-header.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 700px;
-	max-width: 1000px;
+	background-position-x: right;
+	background-position-y: center;
+	min-height: 600px;
+	max-width: 100%;
 }
-header section div p{
+header section div p {
 	font-family: "Boots And Spurs", "Roboto";
 	font-size: 1rem;
 	color: #ffff;
@@ -82,6 +83,7 @@ footer {
 h1,
 h2 {
 	text-align: center;
+	margin: 0 auto;
 }
 img {
 	width: 250px;
@@ -118,7 +120,6 @@ header li:hover {
 	font-weight: bold;
 	color: white;
 	font-size: 20px;
-
 }
 
 /*Layout section */
@@ -129,22 +130,20 @@ header li:hover {
 .container-header {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	background-color: black;
 	padding: 2%;
 	width: 96vw;
-}
 }
 
 /* The menu layout */
 
 .header-layout {
-	flex: 1;		
+	flex: 1;
+	align-self: flex-end;
 }
 /* The Guitar Kingz layout */
-.paragraph-box{
+.paragraph-box {
 	flex: 1;
-
 }
 /* Header and button */
 
@@ -155,18 +154,48 @@ header li:hover {
 }
 .second-child-header {
 	position: absolute;
+	text-align: center;
 	bottom: 50%;
 }
 /* BODY LAYOUT */
 .container-body {
+	max-width: 1000px;
+	margin: 50px auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	border-style: solid;
-	border-color: red;
 }
 
+.container-body > * {
+	flex: 1;
+	text-align: center;
 }
+
+/* LAYOUT FOR REVIEWS */
+
+.BackgroundGrey > div {
+	max-width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row-reverse;
+	border: solid;
+}
+
+.BackgroundGrey div > img {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	margin-top: 15%;
+}
+
+.first-review {
+	flex: 1;
+	content: "- Sally Oldfield";
+}
+
+.second-review {
+	flex: 1;
+}
+
 /* Contact Page */
 .Button_red {
 	background-color: red;
@@ -182,8 +211,48 @@ header li:hover {
 	position: relative;
 	display: inline;
 }
-}
 fieldset {
 	background-repeat: no-repeat;
 	max-width: 800px;
+}
+
+/* GUITAR SECTION */
+
+h2 {
+	color: black;
+	display: grid;
+}
+footer {
+	background-color: white;
+
+	/* CSS GRIDS*/
+}
+.grid-container {
+	border: solid red;
+}
+
+.grid-container {
+	display: grid;
+	flex-wrap: wrap;
+	grid-gap: 3em;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas: "main main main main";
+	text-align: center;
+}
+
+.first-image {
+	grid-column: 1/5;
+}
+.first-image-1 {
+	grid-row: 1/5;
+}
+.first-image-2 {
+	grid-row: 1/5;
+}
+.first-image-3 {
+	grid-row: 1/5;
+}
+.first-image-4 {
+	grid-row: 1/5;
 }
